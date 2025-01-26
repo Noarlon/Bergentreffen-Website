@@ -49,7 +49,7 @@ body {
     color: white;
     font-size: 30px;
     display: block;
-    padding: 14px 20px;
+    padding: 14px 1svw;
 }
 
 #top-bar #link:hover {
@@ -77,5 +77,158 @@ body {
 
 #event {
     width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#event #countdown {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 60px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 60px;
+}
+
+#event #countdown h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#event h1 {
+    font-size: 40px;
+}
+
+#event p {
+    position: relative;
+    font-size: 30px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#info {
+    width: 100%;
     height: 100px;
+}
+
+#info #information {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info #information img {
+    position: relative;
+    height: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+}
+
+#info #information p {
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#info #information .hline {
+    height: 90%;
+    width: 1px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0px 5% 0px 5%;
+}
+
+#info #articles {
+    position: relative;
+    width: 90%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#title-line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-line img {
+    height: 150px;
+}
+
+#title-line h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+#title-line p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#title-line .hline {
+    height: 150px;
+    width: 3px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0px 100px 0px 100px;
+}
+
+.slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.slider-track {
+    display: flex;
+    animation: slide-left 40s linear infinite;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    margin: 0 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item img {
+    max-width: auto;
+    max-height: 80px;
+}
+
+@keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-70%);
+    }
 }
