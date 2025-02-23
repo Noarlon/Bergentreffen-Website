@@ -68,18 +68,27 @@ body {
     margin: 0;
 }
 
+#header #circle img {
+    position: absolute;
+    left: 0;
+    width: 20%;
+}
+
 #header img {
     position: absolute;
     top: 250px;
-    right: 150px;
-    width: 500px;
+    right: 250px;
+    width: 600px;
+}
+
+#fade-1 {
+    background-color: rgb(233, 233, 233);
 }
 
 #event {
     width: 100%;
     height: auto;
     background-color: rgb(233, 233, 233);
-    padding-top: 40px;
     padding-bottom: 60px;
     text-align: center;
 }
@@ -233,10 +242,123 @@ body {
     }
 }
 
-footer {
-    margin-top: 40px;
+
+#news {
+    background-color: #e0e8f1;
+    height: 300px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+#fade-4 {
+    background-color: #5a5a5a;
+    height: 300px;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    background-color: #5a5a5a;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 1px;
+
+}
+
+#contact .hline {
+    background-color: white;
+}
+
+#contact #box {
+    width: 90%;
+    border: 3px solid white;
+    border-radius: 80px;
+    padding: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contact #box div {
+    width: 50%;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#contact #box h1 {
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+#contact #box p {
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+#contact #problem {
+    width: 90%;
+    padding: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#contact #problem h1 {
+    font-size: 40px;
+    margin-bottom: 80px;
+
+}
+
+#contact #problem a {
+    font-size: 40px;
+    color: white;
+}
+
+#contact #problem p {
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+#contact #socials {
+    width: 90%;
+    padding: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+#contact #socials div {
+    width: 50px;
+}
+
+#contact #socials img {
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+}
+
+#fade-5 {
+    background-color: #5a5a5a;
+    margin-bottom: -5%;
+    margin-top: -10%;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
     height: auto;
     background-color: var(--dark_gray);
     color: white;
@@ -245,7 +367,7 @@ footer {
 
 footer #copyright {
     margin-top: 100px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 footer section {
@@ -268,4 +390,16 @@ footer section a {
 footer section div {
     width: 33%;
 
+}
+
+footer #circle {
+    position: relative;
+    width: 100%;
+}
+
+#footer #circle img {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 400px;
 }
