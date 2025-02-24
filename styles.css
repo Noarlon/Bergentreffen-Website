@@ -115,7 +115,7 @@ body {
 #event p {
     position: relative;
     font-size: 30px;
-    width: 80%;
+    width: 70%;
     left: 50%;
     transform: translate(-50%, 0);
 }
