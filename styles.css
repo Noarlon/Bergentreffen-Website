@@ -79,6 +79,8 @@ body {
     top: 250px;
     right: 250px;
     width: 600px;
+    mask-image: url(img/ressources/mask.png);
+
 }
 
 #fade-1 {
