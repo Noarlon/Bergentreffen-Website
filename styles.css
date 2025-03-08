@@ -170,10 +170,70 @@ body {
     border-radius: 80px;
     left: 50%;
     transform: translate(-50%, 0);
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+#info #articles #link {
+    text-decoration: none;
+    color: black;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: -30px;
+    transition: 0.2s;
+}
+
+#info #articles #link:hover {
+    color: var(--blue_accent);
+    border-color: var(--blue_accent);
+}
+
+#info #articles #row {
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+}
+
+#info #articles #article {
+    width: 30%;
+    height: 95%;
+    text-align: center;
+    background-image: url(img/placeholder.png);
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+#info #articles #article:hover {
+    border-radius: 20px;
+    width: 31%;
+    height: 96%;
+}
+
+#info #articles #article h1 {
+    font-size: 40px;
+    bottom: -20%;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#info #articles #article p {
+    font-size: 30px;
+    bottom: -30%;
+    position: relative;
 }
 
 #title-line {
@@ -247,9 +307,134 @@ body {
 
 #news {
     background-color: #e0e8f1;
-    height: 300px;
+    height: auto;
     padding-top: 20px;
     margin-top: -10px;
+}
+
+#news #container {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 600px;
+    border: 3px solid black;
+    border-radius: 70px;
+    margin-top: 50px;
+}
+
+#news #container #top {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news #container #top #profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+#news #container #top #profile img {
+    width: 100px;
+}
+
+#news #container #top #profile h1 {
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+#news #container #top #profile p {
+    padding-left: 40px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+
+#news #container #top #split {
+    width: 4px;
+    height: 60%;
+    background-color: black;
+    border-radius: 100px;
+}
+
+#news #container #top #heading {
+    width: 70%;
+}
+
+#news #container #top #heading h1 {
+    font-size: 30px;
+    padding: 50px;
+}
+
+#news #container #main {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news #container #image {
+    width: 30%;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#news #container #image img {
+    width: 400px;
+}
+
+#news #container #text {
+    height: 100%;
+}
+
+#news #container #text a {
+    text-decoration: none;
+    color: var(--blue_accent);
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+#news #container #text p {
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+#news #more {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 3px solid black;
+    border-radius: 70px;
+    margin-top: 50px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#news #more:hover {
+    width: 55%;
+}
+
+#news a {
+    text-decoration: none;
+}
+
+#news #more p {
+    font-size: 30px;
+    color: black;
+    position: relative;
 }
 
 #fade-4 {
