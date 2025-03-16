@@ -1,0 +1,95 @@
+:root {
+    --dark_gray: #202020;
+    --blue_accent: #246ABA;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    background-color: var(--dark_gray);
+}
+
+.container {
+    position: absolute;
+    width: 50%;
+    height: 800px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 7%;
+
+    background: rgba(255, 255, 255, 0.062);
+    border-radius: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 3px solid rgba(255, 255, 255, 0.082);
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.container label {
+    font-size: 30px;
+}
+
+.container input {
+    width: 90%;
+    height: 50px;
+    color: white;
+    background: rgba(255, 255, 255, 0.062);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 2px solid rgba(255, 255, 255, 0.082);
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container input:hover {
+    border: 2px solid var(--blue_accent);
+}
+
+.container input:focus {
+    border: 2px solid var(--blue_accent);
+    background-color: var(--blue_accent);
+
+}
+
+.container button {
+    width: 40%;
+    font-size: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.062);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 2px solid rgba(255, 255, 255, 0.082);
+    margin-top: 100px;
+    padding: 10px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.container button:hover {
+    background: var(--blue_accent);
+    border: 2px solid var(--blue_accent);
+    width: 45%;
+}
+
+.container button:focus {
+    background: var(--blue_accent);
+    border: 2px solid var(--blue_accent);
+    width: 45%;
+}

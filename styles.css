@@ -103,6 +103,12 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 60px;
+
+    background: rgba(231, 231, 231, 0.83);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
 }
 
 #event #countdown h1 {
@@ -138,6 +144,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: rgba(255, 255, 255, 0.83);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
 }
 
 #info #information img {
@@ -174,6 +186,12 @@ body {
     padding: 20px;
     padding-bottom: 120px;
     text-align: center;
+
+    background: rgba(255, 255, 255, 0.83);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 1px solid rgba(255, 255, 255, 0.78);    
 }
 
 #info #articles #link {
@@ -321,6 +339,12 @@ body {
     border: 3px solid black;
     border-radius: 70px;
     margin-top: 50px;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 5px solid rgba(255, 255, 255, 0.178);
 }
 
 #news #container #top {
@@ -421,10 +445,22 @@ body {
     margin-top: 50px;
     text-align: center;
     transition: 0.3s;
+
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
 }
 
 #news #more:hover {
     width: 55%;
+
+    background: rgba(30, 218, 255, 0.021);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 3px solid rgba(0, 217, 255, 0.164);
 }
 
 #news a {

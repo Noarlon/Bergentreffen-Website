@@ -118,7 +118,14 @@
             <div id="articles">
                 <div id="row">
                     <a href="#" id="article">
-                        <h1>Wer macht mit?</h1>
+                        <h1>
+                            <?php
+                            include 'db_fetch.php';
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>
                         <p>Jetzt mehr erfahren...</p>
                     </a>
                     <a href="#" id="article">
