@@ -12,13 +12,17 @@
     <body>
         <div class="container">
             <h1>Als Admin anmelden</h1>
-            <label>E-Mail</label>
-            <input type="text" placeholder="beispiel@mail.de" name="mail" required>
+            <form action="./db_fetch.php" method="POST">
+                <label for="email">E-Mail</label>
+                <input type="text" id="email" placeholder="beispiel@mail.de" name="email" required>
+    
+                <label for="password">Passwort</label>
+                <input type="password" id="password" placeholder="Passwort..." name="password" required>
+    
+                <p id="error"></p>
 
-            <label>Passwort</label>
-            <input type="password" placeholder="Passwort..." name="psw" required>
-
-            <button type="submit">Login</button>
+                <button type="submit">Login</button>
+            </form>
         </div>
     </body>
 </html>

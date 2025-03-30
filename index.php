@@ -120,35 +120,140 @@
                     <a href="#" id="article">
                         <h1>
                             <?php
-                            include 'db_fetch.php';
                             ini_set('display_errors', 1);
                             error_reporting(E_ALL);
+                            $post_id = 1; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
                             echo htmlspecialchars($text);
                             ?>
                         </h1>
-                        <p>Jetzt mehr erfahren...</p>
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 1; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                     <a href="#" id="article">
-                        <h1>Das ist Bergen Saar</h1>
-                        <p>Jetzt informieren</p>
+                        <h1>
+                            <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 2; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 2; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                     <a href="#" id="article">
-                        <h1>Bergen-Treffen e.V. - Das sind wir!</h1>
-                        <p>Jetzt mehr erfahren...</p>
+                        <h1>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+
+                            $post_id = 3; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>                       
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 3; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                 </div>
                 <div id="row">
                     <a href="#" id="article">
-                        <h1>Anreise</h1>
-                        <p>Weiterlesen...</p>
+                        <h1>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+
+                            $post_id = 4; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 4; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                     <a href="#" id="article">
-                        <h1>Anreise</h1>
-                        <p>Weiterlesen...</p>
+                        <h1>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+
+                            $post_id = 5; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 5; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                     <a href="#" id="article">
-                        <h1>Anreise</h1>
-                        <p>Weiterlesen...</p>
+                        <h1>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+
+                            $post_id = 6; // Jetzt wird `post_id` vor dem Einbinden gesetzt
+                            $column = 'title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                            ?>
+                        </h1>
+                        <p>
+                        <?php
+                            ini_set('display_errors', 1);
+                            error_reporting(E_ALL);
+                            $post_id = 6; 
+                            $column = 'spoil_title';
+                            $text = require 'db_fetch.php';
+                            echo htmlspecialchars($text);
+                        ?>
+                        </p>
                     </a>
                 </div>
                 <a href="#" id="link">Alle Artikel anzeigen</a>
@@ -275,7 +380,7 @@
         <div>
             <h1><a href=""><b>Zurück zum Anfang</b></a></h1>
             <p><a href="">Newsroom</a></p>
-            <p><a href="">Admin Login</a></p>
+            <p><a href="./admin/">Admin Login</a></p>
             <p><a href="">Impressum (Imprint)</a></p>
         </div>
         <div>
