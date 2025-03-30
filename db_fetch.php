@@ -1,34 +1,15 @@
 <?php
+// Zugangsdaten
+$db_server = 'database-5017384113.webspace-host.com';
+$db_benutzer = 'dbu867632';
+$db_passwort = 'BT_DB_Articles!';
+$db_name = 'dbs13939101';
 
-// Datenbank Verbindungsdetails
-$host = 'database-5017384113.webspace-host.com';
-$db = 'dbs13939101';
-$user = 'dbu867632';
-$pass = 'BT_DB_Articles!';
-
-// Verbindung zur Datenbank herstellen
-$mysqli = new mysqli($host, $user, $pass, $db);
-
-// Überprüfen ob Verbindung erfolgreich war
-if ($mysqli->connect_error) {
-    die('Verbindung zur Datenbank fehlgeschlagen: ' . $mysqli->connect_error);
+// Verbindungsaufbau
+try {
+    $dbh = new PDO("mysql:host=$db_server;dbname=$db_name", $db_benutzer, $db_passwort);
+    echo 'Verbindung zur Datenbank hergestellt.';
+} catch (PDOException $e) {
+    die('Fehler bei der Verbindung zur Datenbank: ' . $e->getMessage());
 }
-
-// SQL-Abfrage zum Abrufen der Data
-$sql = "SELECT title FROM articles WHERE id = 1";
-$result = $mysqli->query($sql);
-
-// Wenn Daten erfolgreich erhalten diese anzeigen, sonst Fehlernachricht anzeigen
-if ($result->num_rows > 0) {
-    // Abrufen der Daten
-    $row = $result->fetch_assoc();
-    $text = $row['title'];
-} else {
-    // Fehlernachricht 404d
-    $text = 'Fehler beim Laden der Datenpakete... (404d)';
-}
-
-// Verbindung schließen
-$mysqli->close();
-
 ?>
