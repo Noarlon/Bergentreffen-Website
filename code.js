@@ -24,11 +24,11 @@ const countdownFunction = setInterval(() => {
 }, 1000);
 
 
-// Smooth Scroll Animation for Navigation Bar
+
 document.addEventListener("DOMContentLoaded", function() {
-    var navigation = document.getElementById("top-bar");
-  
-    if (navigation) {
+  // Smooth Scroll Animation for Navigation Bar
+  var navigation = document.getElementById("top-bar");
+  if (navigation) {
       navigation.addEventListener("click", function(event) {
         // Überprüfen, ob der geklickte Link innerhalb der Navigationsleiste liegt
         if (event.target.tagName === "A"  && !event.target.classList.contains("online-banking")) {
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
           }
         }
-      });
-    }
-  });
+      }
+      );
+  } 
+});
