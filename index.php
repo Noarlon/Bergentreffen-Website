@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bergentreffen 2025</title>
-    <link rel="icon" href="icon.ico" type="images/icon" />
+    <link rel="icon" href="../img/icons/icon.ico" type="images/icon" />
     <link rel="stylesheet" href="styles.css">
     <script src="code.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -136,7 +136,7 @@
 
             <div id="articles">
                 <div id="row">
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=1" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 1;
@@ -165,7 +165,7 @@
                             ?>
                         </p>
                     </a>
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=2" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 2;
@@ -194,7 +194,7 @@
                             ?>
                         </p>
                     </a>
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=3" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 3;
@@ -226,7 +226,7 @@
                     </a>
                 </div>
                 <div id="row">
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=4" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 4;
@@ -256,7 +256,7 @@
                             ?>
                         </p>
                     </a>
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=5" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 5;
@@ -286,7 +286,7 @@
                             ?>
                         </p>
                     </a>
-                    <a href="#" id="article" style="background-image: url('data/img/<?php
+                    <a href="/articles/article/index.php?post_id=6" id="article" style="background-image: url('data/img/<?php
                     ini_set('display_errors', 1);
                     error_reporting(E_ALL);
                     $post_id = 6;
