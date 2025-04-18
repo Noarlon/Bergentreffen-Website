@@ -13,26 +13,66 @@
 </head>
 
 <body>
+    <?php
+        ini_set('display_errors', 1);
+        error_reporting(E_ALL);
+
+        // Hole post_id aus der URL, z. B. ?post_id=2
+        $post_id = isset($_GET['post_id']) && is_numeric($_GET['post_id']) ? (int) $_GET['post_id'] : 1;
+    ?>
+
     <div id="top">
-        <h1><b>Ankündigung 1</b></h1>
+        <h1><b>
+            <?php
+                $column = 'title';
+                $text = require 'db_fetch_news.php';
+                echo htmlspecialchars($text);
+            ?>
+        </b></h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#202020" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,122.7C840,139,960,149,1080,154.7C1200,160,1320,160,1380,160L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     </div>
     <div id="main">
         <div id="profile">
             <img src="../../img/icons/profile_pic.png" id="profile_pic">
             <div id="name">
-                <h1>Max Mustermann</h1>
-                <p>Team Social Media</p>
+                <h1><?php
+                $column = 'author_id';
+                $author_id = require 'db_fetch_news.php';
+                $column = 'first_name';
+                $first = require 'db_fetch_users.php';
+                $column = 'name';
+                $second = require 'db_fetch_users.php';
+                echo htmlspecialchars($first . ' ' . $second);
+            ?></h1>
+                <p><?php
+                $column = 'author_id';
+                $author_id = require 'db_fetch_news.php';
+                $column = 'role';
+                $text = require 'db_fetch_users.php';
+                echo htmlspecialchars($text);
+            ?></p>
             </div>
             <div id="seperation"></div>
             <div id="date">
                 <p>Veröffentlicht am</p>
-                <h1>02. Mai 2025</h1>
+                <h1><?php
+                $column = 'post_datetime';
+                $text = require 'db_fetch_news.php';
+                echo htmlspecialchars($text);
+            ?></h1>
             </div>
         </div>
-        <img src="../../data/img/fziaqtmk.jpg" id="image">
+        <img src="<?php
+                $column = 'img_url';
+                $text = require 'db_fetch_news.php';
+                echo htmlspecialchars($text);
+            ?>" id="image" onerror="this.style.display='none'">
         <p id="text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <?php
+                $column = 'text';
+                $text = require 'db_fetch_news.php';
+                echo htmlspecialchars($text);
+            ?>    
         </p>
     </div>
     <div id="bottom">

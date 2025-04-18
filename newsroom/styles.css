@@ -1,0 +1,312 @@
+:root {
+    --dark_gray: #202020;
+    --blue_accent: #246ABA;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+}
+
+#topbar {
+    background-color: var(--dark_gray);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+#topbar svg {
+    margin-top: -45px;
+}
+
+#topbar h1 {
+    color: white;
+    margin-top: 0px;
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+#main {
+    min-height: 100svh;
+}
+
+#news-container {
+    margin-top: 400px;
+}
+
+#news-container #container {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 600px;
+    border: 3px solid black;
+    border-radius: 70px;
+    margin-top: 50px;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.9px);
+    -webkit-backdrop-filter: blur(14.9px);
+    border: 5px solid rgba(255, 255, 255, 0.178);
+}
+
+#news-container #container #top {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news-container #container #top #profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-left: 40px;
+}
+
+#news-container #container #top #profile img {
+    width: 100px;
+}
+
+#news-container #container #top #profile h1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+}
+
+#news-container #container #top #profile p {
+    padding-left: 40px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+#news-container #container #top #split {
+    width: 3px;
+    height: 60%;
+    background-color: black;
+    border-radius: 100px;
+}
+
+#news-container #container #top #heading {
+    width: 70%;
+}
+
+#news-container #container #top #heading h1 {
+    font-size: 30px;
+    padding: 50px;
+}
+
+#news-container #container #main {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news-container #container #main img {
+    padding-left: 40px;
+    width: 400px;
+    position: relative;
+    top: -300px;
+}
+
+#news-container #container #text {
+    height: 100%;
+    width: 90%;
+}
+
+#news-container #container #text a {
+    text-decoration: none;
+    color: var(--blue_accent);
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+#news-container #container #text p {
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+#bottom {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 200px;
+    z-index: 10;
+}
+
+#bottom a {
+    font-size: 30px;
+    color: var(--blue_accent);
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 5px 40px 5px 40px;
+    transition: 0.3s;
+    z-index: 3;
+}
+
+#bottom a:hover {
+    padding: 5px 60px 5px 60px;
+}
+
+#fade-5 {
+    background-color: #ffffff;
+    margin-bottom: -5%;
+    z-index: 0;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: auto;
+    background-color: var(--dark_gray);
+    color: white;
+    text-align: center;
+}
+
+footer #copyright {
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+footer section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer section h1 {
+    font-size: 30px;
+}
+
+footer section a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+footer section div {
+    width: 33%;
+
+}
+
+footer #circle {
+    position: relative;
+    width: 100%;
+}
+
+#footer #circle img {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #topbar div  {
+        width: 100%;
+    }
+
+    #topbar {
+        height: 130px;
+    }
+
+    #topbar svg {
+        margin-top: -15px;
+    }
+
+    #news-container {
+        margin-top: 250px;
+    }
+
+    #news-container #container {
+        height: auto;
+        width: 95%;
+        padding: 40px 0px 0px 0px;
+    }
+
+    #news-container #container #top #profile {
+        flex-direction: column;
+        height: auto;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    #news-container #container #top #profile h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+    #news-container #container #top #profile p {
+        padding: 0px;
+    }
+
+    #news-container #container #main {
+        flex-direction: column;
+        height: auto;
+        height: 80%;
+    }
+
+    #news-container #container #top #heading {
+        width: 95%;
+        text-align: center;
+    }  
+
+    #news-container #container #top #heading h1 {
+        padding: 0px;
+        font-size: 35px;
+    }    
+
+    #news-container #container #main img {
+        width: 80%;
+        padding-left: 0px;
+        top: -20px;
+    }
+
+    #news-container #container #text p {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    #news-container #container #top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer section div {
+        width: 100%;
+    }
+
+    footer section h1 {
+        font-size: 25px;
+    }
+
+    footer section a {
+        font-size: 25px;
+    }
+
+    footer section p {
+        font-size: 25px;
+    }
+
+}

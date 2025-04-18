@@ -1,12 +1,12 @@
 <?php
 // Zugangsdaten
-$db_server = 'database-5017384113.webspace-host.com';
-$db_benutzer = 'dbu867632';
-$db_passwort = 'BT_DB_Articles!';
-$db_name = 'dbs13939101';
+$db_server = 'database-5017384132.webspace-host.com';
+$db_benutzer = 'dbu440815';
+$db_passwort = 'BT_DB_News!';
+$db_name = 'dbs13939109';
 
 // Erlaubte Spaltennamen
-$valid_columns = ['title', 'spoil_title', 'text', 'post_date', 'img_url', 'author_id'];
+$valid_columns = ['title', 'author_id', 'text', 'post_datetime', 'img_url', 'id'];
 
 // Parameter prüfen
 $column = $column ?? null;
@@ -32,12 +32,12 @@ try {
 
     if ($ordered) {
         // Exakte post_id
-        $sql = "SELECT $column FROM articles WHERE post_id = :post_id LIMIT 1";
+        $sql = "SELECT $column FROM news WHERE id = :post_id LIMIT 1";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(':post_id', $post_id, PDO::PARAM_INT);
     } else {
         // post_id als Offset in absteigendem Datum
-        $sql = "SELECT $column FROM articles ORDER BY post_date DESC LIMIT 1 OFFSET :offset";
+        $sql = "SELECT $column FROM news ORDER BY post_datetime DESC LIMIT 1 OFFSET :offset";
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(':offset', $post_id - 1, PDO::PARAM_INT);
     }
@@ -45,6 +45,9 @@ try {
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    if($column === "img_url") {
+            return $row ? "../../data/img/" . $row[$column] : '';
+    }
     return $row ? $row[$column] : 'Eintrag nicht gefunden.';
 } catch (PDOException $e) {
     return 'Datenbankfehler: ' . $e->getMessage();

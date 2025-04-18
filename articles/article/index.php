@@ -49,6 +49,36 @@
     </div>
 
     <div id="main">
+        <div id="profile">
+            <img src="../../img/icons/profile_pic.png" id="profile_pic">
+            <div id="name">
+                <h1><?php
+                $column = 'author_id';
+                $author_id = require 'db_fetch_articles.php';
+                $column = 'first_name';
+                $first = require 'db_fetch_users.php';
+                $column = 'name';
+                $second = require 'db_fetch_users.php';
+                echo htmlspecialchars($first . ' ' . $second);
+            ?></h1>
+                <p><?php
+                $column = 'author_id';
+                $author_id = require 'db_fetch_articles.php';
+                $column = 'role';
+                $text = require 'db_fetch_users.php';
+                echo htmlspecialchars($text);
+            ?></p>
+            </div>
+            <div id="seperation"></div>
+            <div id="date">
+                <p>Veröffentlicht am</p>
+                <h1><?php
+                $column = 'post_date';
+                $text = require 'db_fetch_articles.php';
+                echo htmlspecialchars($text);
+            ?></h1>
+            </div>
+        </div>
         <p id="date">
             <?php
                 $column = 'post_date';
@@ -82,8 +112,8 @@
             <div>
                 <h1><a href=""><b>Zurück zum Anfang</b></a></h1>
                 <p><a href="">Newsroom</a></p>
-                <p><a href="./admin/">Admin Login</a></p>
-                <p><a href="./impressum/index.html">Impressum (Imprint)</a></p>
+                <p><a href="../../admin/">Admin Login</a></p>
+                <p><a href="../../impressum/index.html">Impressum (Imprint)</a></p>
             </div>
             <div>
                 <h1><b>Social Media:</b></h1>

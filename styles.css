@@ -3,13 +3,14 @@
     --blue_accent: #246ABA;
 }
 
-body {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     padding: 0;
     margin: 0;
     overscroll-behavior-y: none;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 .color-accent {
@@ -230,7 +231,7 @@ body {
     background-size: cover;
     background-position: center;
     text-decoration: none;
-    color: rgb(224, 224, 224);
+    color: white;
     margin: 5px;
     border-radius: 40px;
     transition: 0.3s;
@@ -244,6 +245,8 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 40px;
     transition: 0.3s;
 }
@@ -263,16 +266,18 @@ body {
 
 #info #articles #article h1 {
     font-size: 40px;
-    bottom: -20%;
+    bottom: -15%;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
+    text-shadow: 1px 1px 2px black;
 }
 
 #info #articles #article p {
     font-size: 30px;
-    bottom: -30%;
+    bottom: -25%;
     position: relative;
+    text-shadow: 1px 1px 2px black;
 }
 
 #title-line {
@@ -335,14 +340,9 @@ body {
 }
 
 @keyframes slide-left {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-70%);
-    }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
-
 
 #news {
     background-color: #e0e8f1;
@@ -769,12 +769,11 @@ footer #circle {
     }
 
     #header img {
-        width: 120%;
+        width: 100%;
         left: 50%;
-        top: 300px;
+        top: 250px;
         transform: translate(-50%, 0);
         z-index: 0;
-        opacity: 80%;
     }
 
     #header #circle img {
@@ -834,7 +833,7 @@ footer #circle {
     }
 
     .slider-item {
-        margin: 0 12px
+        margin: 0px
     }
 
 

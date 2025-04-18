@@ -317,7 +317,7 @@
                         </p>
                     </a>
                 </div>
-                <a href="#" id="link">Alle Artikel anzeigen</a>
+                <a href="/articles/index.php" id="link">Alle Artikel anzeigen</a>
             </div>
         </section>
 
@@ -364,9 +364,25 @@
 
                         const profileText = document.createElement("div");
                         const profileName = document.createElement("h1");
-                        profileName.innerHTML = "<b>Max Mustermann</b>";
+                        profileName.innerHTML = "<b><?php
+                            $column = 'author_id';
+                            $post_id = 1;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'first_name';
+                            $first = require 'db_fetch_users.php';
+                            $column = 'name';
+                            $second = require 'db_fetch_users.php';
+                            echo htmlspecialchars($first . ' ' . $second);
+                        ?></b>";
                         const profileTeam = document.createElement("p");
-                        profileTeam.textContent = "Team Unbekannt";
+                        profileTeam.textContent = "<?php
+                            $column = 'author_id';
+                            $post_id = 1;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'role';
+                            $text = require 'db_fetch_users.php';
+                            echo htmlspecialchars($text);
+                        ?>";
 
                         profileText.appendChild(profileName);
                         profileText.appendChild(profileTeam);
@@ -412,7 +428,7 @@
                             echo htmlspecialchars($text);
                             ?>";
                         const link = document.createElement("a");
-                        link.href = "#";
+                        link.href = "/newsroom/news/index.php?post_id=1";
                         link.textContent = "Mehr lesen";
 
                         textDiv.appendChild(paragraph);
@@ -465,9 +481,25 @@
 
                         const profileText = document.createElement("div");
                         const profileName = document.createElement("h1");
-                        profileName.innerHTML = "<b>Max Mustermann</b>";
+                        profileName.innerHTML = "<b><?php
+                            $column = 'author_id';
+                            $post_id = 2;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'first_name';
+                            $first = require 'db_fetch_users.php';
+                            $column = 'name';
+                            $second = require 'db_fetch_users.php';
+                            echo htmlspecialchars($first . ' ' . $second);
+                        ?></b>";
                         const profileTeam = document.createElement("p");
-                        profileTeam.textContent = "Team Unbekannt";
+                        profileTeam.textContent = "<?php
+                            $column = 'author_id';
+                            $post_id = 2;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'role';
+                            $text = require 'db_fetch_users.php';
+                            echo htmlspecialchars($text);
+                        ?>";
 
                         profileText.appendChild(profileName);
                         profileText.appendChild(profileTeam);
@@ -513,7 +545,7 @@
                             echo htmlspecialchars($text);
                             ?>";
                         const link = document.createElement("a");
-                        link.href = "#";
+                        link.href = "/newsroom/news/index.php?post_id=2";
                         link.textContent = "Mehr lesen";
 
                         textDiv.appendChild(paragraph);
@@ -566,9 +598,25 @@
 
                         const profileText = document.createElement("div");
                         const profileName = document.createElement("h1");
-                        profileName.innerHTML = "<b>Max Mustermann</b>";
+                        profileName.innerHTML = "<b><?php
+                            $column = 'author_id';
+                            $post_id = 3;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'first_name';
+                            $first = require 'db_fetch_users.php';
+                            $column = 'name';
+                            $second = require 'db_fetch_users.php';
+                            echo htmlspecialchars($first . ' ' . $second);
+                        ?></b>";
                         const profileTeam = document.createElement("p");
-                        profileTeam.textContent = "Team Unbekannt";
+                        profileTeam.textContent = "<?php
+                            $column = 'author_id';
+                            $post_id = 3;
+                            $author_id = require 'db_fetch_news.php';
+                            $column = 'role';
+                            $text = require 'db_fetch_users.php';
+                            echo htmlspecialchars($text);
+                        ?>";
 
                         profileText.appendChild(profileName);
                         profileText.appendChild(profileTeam);
@@ -614,7 +662,7 @@
                             echo htmlspecialchars($text);
                             ?>";
                         const link = document.createElement("a");
-                        link.href = "#";
+                        link.href = "/newsroom/news/index.php?post_id=3";
                         link.textContent = "Mehr lesen";
 
                         textDiv.appendChild(paragraph);
@@ -652,7 +700,7 @@
                 </script>
             </div>
 
-            <a href="#">
+            <a href="/newsroom/">
                 <div id="more">
                     <p>Alle Neuigkeiten lesen (Newsroom)</p>
                 </div>

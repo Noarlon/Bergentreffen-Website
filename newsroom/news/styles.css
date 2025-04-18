@@ -15,7 +15,6 @@ body {
 #top {
     width: 100%;
     height: 130px;
-    background-color: var(--dark_gray);
     color: white;
     margin-bottom: 250px;
 }
@@ -23,8 +22,9 @@ body {
 #top h1 {
     text-align: center;
     font-size: 60px;
+    background-color: var(--dark_gray);
     margin: 0;
-    padding-top: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 #main #image {
@@ -169,6 +169,36 @@ footer #circle {
 
     #top div  {
         width: 100%;
+    }
+
+    #top {
+        margin-bottom: 150px;
+    }
+
+    #main #profile {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    #main #profile #profile_pic {
+        margin-top: 20px;
+    }
+
+    #main #profile #seperation {
+        height: 2px;
+        width: 90%;
+    }
+
+    #main #image {
+        width: 95%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+    }
+
+    #main #text {
+        font-size: 25px;
     }
 
     footer section {

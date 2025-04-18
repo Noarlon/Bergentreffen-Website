@@ -40,7 +40,7 @@
                 }
 
                 // Artikel aus der DB holen
-                $stmt = $pdo->query("SELECT post_id, img_url, title, spoil_title FROM articles");
+                $stmt = $pdo->query("SELECT post_id, img_url, title, spoil_title FROM articles ORDER BY post_date DESC");
                 $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
 
@@ -54,21 +54,21 @@
                 if (articles && articles.length > 0) {
                     articles.forEach(article => {
                         const a = document.createElement("a");
-                        a.href = `../articles/article/index.php?post_id=${article.post_id}`;
+                        a.href = `../articles/article/index.php?post_id=${article.post_id}&ordered=true`;
 
                         const articleDiv = document.createElement("div");
-                        articleDiv.id = `article-${article.post_id}`; // ID des Artikels
+                        articleDiv.id = `article`; // ID des Artikels
 
                         const img = document.createElement("img");
-                        img.src = article.img_url;  // Bildquelle aus der DB
-                        img.id = `image-${article.post_id}`; // ID des Bildes (optional)
+                        img.src = `../data/img/${article.img_url}`;  // Bildquelle aus der DB
+                        img.id = `image`; // ID des Bildes (optional)
 
                         const h1 = document.createElement("h1");
-                        h1.id = `title-${article.post_id}`; // ID des Titels
+                        h1.id = `title`; // ID des Titels
                         h1.textContent = article.title;
 
                         const p = document.createElement("p");
-                        p.id = `spoil_title-${article.post_id}`; // ID des Spoiler-Titels
+                        p.id = `spoil_title`; // ID des Spoiler-Titels
                         p.textContent = article.spoil_title;
 
                         // Anhängen der HTML-Elemente
@@ -105,8 +105,8 @@
             <div>
                 <h1><a href=""><b>Zurück zum Anfang</b></a></h1>
                 <p><a href="">Newsroom</a></p>
-                <p><a href="./admin/">Admin Login</a></p>
-                <p><a href="./impressum/index.html">Impressum (Imprint)</a></p>
+                <p><a href="../admin/">Admin Login</a></p>
+                <p><a href="../impressum/index.html">Impressum (Imprint)</a></p>
             </div>
             <div>
                 <h1><b>Social Media:</b></h1>
