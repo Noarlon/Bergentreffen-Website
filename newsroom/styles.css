@@ -42,7 +42,6 @@ body {
 
 #news-container #container {
     width: 80%;
-    height: auto;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -107,7 +106,7 @@ body {
 }
 
 #news-container #container #main {
-    height: auto;
+    height: 70%;
     width: 100%;
     display: flex;
     align-items: center;

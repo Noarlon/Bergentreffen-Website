@@ -964,11 +964,12 @@ footer #supporter #holder img:hover {
     }
 
     #info #articles #article h1 {
-        bottom: -10%;
+        bottom: -5%;
+        font-size: 25px;
     }
 
     #info #articles #article p {
-        bottom: -20%;
+        bottom: -10%;
         font-size: 20px;
     }
 
