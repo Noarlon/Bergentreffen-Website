@@ -103,7 +103,7 @@
     <footer id="footer">
         <section>
             <div>
-                <h1><a href=""><b>Zurück zum Anfang</b></a></h1>
+                <h1><a href="../newsroom/"><b>Zurück zum Anfang</b></a></h1>
                 <p><a href="">Newsroom</a></p>
                 <p><a href="../admin/">Admin Login</a></p>
                 <p><a href="../impressum/index.html">Impressum (Imprint)</a></p>
@@ -119,6 +119,20 @@
                 <p><a>oder mehr im Impressum</a></p>
             </div>
         </section>
+
+        <div id="supporter">
+            <h1>Vielen Dank an unsere Supporter!</h1>
+            <div id="holder">
+                <a href="https://www.cmn.de/"><img src="/img/supporter/supp-cmn.png"></a>
+                <a href="https://www.meisterwerkstatt-hewer.de"><img src="/img/supporter/supp-hewer.jpg"></a>
+                <a href="https://www.ikk-suedwest.de/"><img src="/img/supporter/supp-ikk.png"></a>
+                <a href="https://www.kues-losheim.de/"><img src="/img/supporter/supp-kuss.jpg"></a>
+                <a href="https://www.spkmw.de"><img src="/img/supporter/supp-sparkasse.png"></a>
+                <a href=""><img src="/img/supporter/supp-taxi-martin.jpg"></a>
+                <a href="https://www.facebook.com/lackierereiwollmann"><img src="/img/supporter/supp-wollmann.jpg"></a>
+                <a href=""><img src="/img/supporter/supp-heizöl-röder.png"></a>
+            </div>
+        </div>
 
         <p id="copyright">© Bergen-Treffen e.V. 2025</p>
 

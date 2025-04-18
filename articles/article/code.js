@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    if (window.screen.width >= 750) {
+    if (window.screen.width >= 1200) {
   
         let background_img = document.getElementById('background');
         let image = document.getElementById('image');

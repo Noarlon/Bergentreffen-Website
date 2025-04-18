@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artikel 1</title>
-    <link rel="icon" href="../img/icons/icon.ico" type="images/icon" />
+    <title> <?php
+                $column = 'title';
+                $text = require 'db_fetch_news.php';
+                echo htmlspecialchars($text);
+            ?></title>
+    <link rel="icon" href="../../img/icons/icon.ico" type="images/icon" />
     <link rel="stylesheet" href="styles.css">
     <script src="code.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -91,9 +95,9 @@
         <section>
             <div>
                 <h1><a href=""><b>Zurück zum Anfang</b></a></h1>
-                <p><a href="">Newsroom</a></p>
+                <p><a href="../../newsroom/">Newsroom</a></p>
                 <p><a href="./admin/">Admin Login</a></p>
-                <p><a href="./impressum/index.html">Impressum (Imprint)</a></p>
+                <p><a href="../../impressum/index.html">Impressum (Imprint)</a></p>
             </div>
             <div>
                 <h1><b>Social Media:</b></h1>
@@ -106,6 +110,20 @@
                 <p><a>oder mehr im Impressum</a></p>
             </div>
         </section>
+
+        <div id="supporter">
+            <h1>Vielen Dank an unsere Supporter!</h1>
+            <div id="holder">
+                <a href="https://www.cmn.de/"><img src="/img/supporter/supp-cmn.png"></a>
+                <a href="https://www.meisterwerkstatt-hewer.de"><img src="/img/supporter/supp-hewer.jpg"></a>
+                <a href="https://www.ikk-suedwest.de/"><img src="/img/supporter/supp-ikk.png"></a>
+                <a href="https://www.kues-losheim.de/"><img src="/img/supporter/supp-kuss.jpg"></a>
+                <a href="https://www.spkmw.de"><img src="/img/supporter/supp-sparkasse.png"></a>
+                <a href=""><img src="/img/supporter/supp-taxi-martin.jpg"></a>
+                <a href="https://www.facebook.com/lackierereiwollmann"><img src="/img/supporter/supp-wollmann.jpg"></a>
+                <a href=""><img src="/img/supporter/supp-heizöl-röder.png"></a>
+            </div>
+        </div>
 
         <p id="copyright">© Bergen-Treffen e.V. 2025</p>
 

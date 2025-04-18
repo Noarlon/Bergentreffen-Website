@@ -280,6 +280,42 @@ html, body {
     text-shadow: 1px 1px 2px black;
 }
 
+#info #supporter {
+    height: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#info #supporter h1 {
+    font-size: 40px;
+}
+
+#info #supporter #holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#info #supporter #holder img {
+    height: 150px;
+    width: auto;
+    padding: 40px;
+    transition: .3s;
+    scale: 1;
+}
+
+#info #supporter #holder img:hover {
+    scale: 1.1;
+    width: auto;
+    padding: 40px;
+}
+
 #title-line {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -640,6 +676,42 @@ footer #circle {
     width: 400px;
 }
 
+footer #supporter {
+    height: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+footer #supporter h1 {
+    font-size: 40px;
+}
+
+footer #supporter #holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer #supporter #holder img {
+    height: 100px;
+    width: auto;
+    padding: 40px;
+    transition: .3s;
+    scale: 1;
+}
+
+footer #supporter #holder img:hover {
+    scale: 1.1;
+    width: auto;
+    padding: 40px;
+}
+
 
 /* CSS Layout for iPad */
 @media only screen and (max-width: 1200px) {
@@ -652,7 +724,7 @@ footer #circle {
     }
 
     #header img {
-        width: 60%;
+        width: 53%;
         z-index: 0;
         left: 40%;
         opacity: 80%;
@@ -680,6 +752,16 @@ footer #circle {
 
     #info #information p {
         font-size: 25px;
+    }
+
+    #info #articles #article h1 {
+        bottom: -10%;
+        font-size: 30px;
+    }
+
+    #info #articles #article p {
+        bottom: -20%;
+        font-size: 20px;
     }
 
     #news #container {
@@ -762,7 +844,7 @@ footer #circle {
 
 
 /* CSS Layout for Phones */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
 
     #top-bar {
         display: none;
@@ -894,6 +976,14 @@ footer #circle {
         font-size: 25px;
     }
 
+    #info #supporter #holder img {
+        height: auto;
+        width: 40%;
+        padding: 40px;
+        transition: .3s;
+        scale: 1;
+    }
+
     #news {
         min-height: 400px;
     }
@@ -973,6 +1063,15 @@ footer #circle {
 
     footer section p {
         font-size: 25px;
+    }
+
+    footer #supporter h1 {
+        font-size: 30px;
+    }
+
+    footer #supporter #holder img {
+        height: auto;
+        width: 60%;
     }
 
 }
