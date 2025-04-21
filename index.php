@@ -14,6 +14,13 @@
 
 <body>
     <header>
+
+        <?php
+            // Diese Seite darf 1 Stunde lang gecacht werden
+            header("Cache-Control: max-age=3600, public");
+            header("Expires: " . gmdate("D, d M Y H:i:s", time() + 3600) . " GMT");
+        ?>
+
         <section id="header">
             <div id="top-bar">
                 <ul>
@@ -90,7 +97,7 @@
                 acht deutsche Städte und Gemeinden mit dem Namen <b>Bergen</b> zusammen, um Freundschaften zu pflegen,
                 regionale Traditionen zu feiern und den kulturellen Austausch zu fördern.
                 <br><br>
-                Das nächste Bergentreffen findet vom <b>29. Mai bis 1. Juni 2025</b> in Bergen/Losheim im Saarland
+                Das nächste Bergentreffen findet vom <b>29. Mai bis 1. Juni 2025</b> in Bergen im Saarland
                 statt. Freuen Sie sich auf ein buntes Programm mit kulturellen Darbietungen, Markttagen voller
                 regionaler Spezialitäten und spannenden gemeinsamen Ausflügen.
                 <br><br>
@@ -113,7 +120,7 @@
                 <div class="hline"></div>
                 <div>
                     <h1>Bergentreffen 2025</h1>
-                    <p>Bergen an der Saar</p>
+                    <p>Bergen/Saar</p>
                 </div>
             </div>
 

@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <?php
+        // Diese Seite darf 1 Stunde lang gecacht werden
+        header("Cache-Control: max-age=3600, public");
+        header("Expires: " . gmdate("D, d M Y H:i:s", time() + 3600) . " GMT");
+    ?>
+
     <div id="topbar">
         <h1><b>Newsroom</b></h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

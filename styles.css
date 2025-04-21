@@ -84,6 +84,8 @@ html, body {
     right: 250px;
     width: 600px;
     mask-image: url(img/ressources/mask.png);
+    mask-position: center;
+    mask-size: 600px;
 }
 
 #fade-1 {
@@ -764,6 +766,11 @@ footer #supporter #holder img:hover {
         font-size: 20px;
     }
 
+    
+    #info #supporter #holder img:hover {
+        scale: 1;
+    }
+
     #news #container {
         width: 95%;
         height: auto;
@@ -840,6 +847,11 @@ footer #supporter #holder img:hover {
         margin-left: 0;
         text-align: center;
     }
+
+    footer #supporter #holder img:hover {
+        scale: 1;
+    }
+
 }
 
 
@@ -856,6 +868,7 @@ footer #supporter #holder img:hover {
         top: 250px;
         transform: translate(-50%, 0);
         z-index: 0;
+        mask-size: 100%;
     }
 
     #header #circle img {
@@ -870,7 +883,7 @@ footer #supporter #holder img:hover {
 
     #main-heading {
         left: 0px;
-        top: 100px;
+        top: 50px;
     }
     
 
@@ -1003,7 +1016,7 @@ footer #supporter #holder img:hover {
     }
 
     #fade-4 {
-        height: 100px;
+        height: 105px;
     }
 
     #contact #box {

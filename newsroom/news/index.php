@@ -18,6 +18,12 @@
 
 <body>
     <?php
+        // Diese Seite darf 1 Stunde lang gecacht werden
+        header("Cache-Control: max-age=3600, public");
+        header("Expires: " . gmdate("D, d M Y H:i:s", time() + 3600) . " GMT");
+    ?>
+
+    <?php
         ini_set('display_errors', 1);
         error_reporting(E_ALL);
 
